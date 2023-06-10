@@ -74,7 +74,7 @@
   <body>
     <!--  github -->
     <a
-      href="https://github.com/EW-EndWall/SHORT"
+      href="https://github.com/EW-EndWall/port-scanner"
       class="github-corner"
       aria-label="View source on GitHub"
       ><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true">
