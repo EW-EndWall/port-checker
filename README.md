@@ -4,7 +4,7 @@
     <img src="https://github.com/EW-EndWall/port-checker/assets/43109779/ee4437e5-9cd7-42e6-b158-068a850df0a9" alt="Logo" width="220" height="220">
   </a>
 
-  <h3 align="center">Port Checker</h3>
+  <h3 align="center">Port Scanner</h3>
 
   <p align="center">
     Open / Close
