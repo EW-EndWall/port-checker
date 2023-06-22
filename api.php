@@ -3,9 +3,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $jsonData = file_get_contents('php://input');
     $data = json_decode($jsonData, true);
     if ($data !== null && isset($data['url']) && isset($data['port'])) {
-        if (preg_match('/^[a-zA-Z0-9.:\/]+$/', $data['url']) && preg_match('/^[0-9]+$/', $data['port'])) {
-            // * get data
-            $host = str_replace(array('http://', 'https://'), '', $data['url']);
+        if (filter_var($data['url'], FILTER_VALIDATE_URL) !== false && preg_match('/^[0-9]+$/', $data['port'])) {
+            // * Get data
+            $host = parse_url($data['url'], PHP_URL_HOST);
             $ret = scanPort($host, $data['port']);
             echo json_encode($ret);
         } else {
